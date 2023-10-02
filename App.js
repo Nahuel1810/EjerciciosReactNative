@@ -7,10 +7,18 @@ import TP14 from './screens/TP14';
 import TP13 from './screens/TP13';
 import TP12 from './screens/TP12';
 import TP11 from './screens/TP11';
+import { useFonts, Kanit_700Bold, Kanit_300Light_Italic } from '@expo-google-fonts/kanit';
 
 const Stack = createStackNavigator();
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    Kanit_700Bold,
+    Kanit_300Light_Italic,
+  });
+  if (!fontsLoaded) {
+    return null;
+  }
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>

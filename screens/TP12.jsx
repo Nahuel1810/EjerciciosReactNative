@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, ScrollView } from 'react-native';
 import Button from '../components/Button';
 
-export default function TP12({ navigation }) {
+export default function TP12() {
     const [inputNumber, setInputNumber] = useState('');
     const [displayCharacter, setDisplayCharacter] = useState('#');
     const [displayResult, setDisplayResult] = useState('');
 
     const digitPatterns = [
-        ['###', '# #', '# #', '# #', '###'], // 0
-        ['  #', '  #', '  #', '  #', '  #'], // 1
-        ['###', '  #', '###', '#  ', '###'], // 2
-        ['###', '  #', '###', '  #', '###'], // 3
-        ['# #', '# #', '###', '  #', '  #'], // 4
-        ['###', '#  ', '###', '  #', '###'], // 5
-        ['###', '#  ', '###', '# #', '###'], // 6
-        ['###', '  #', '  #', '  #', '  #'], // 7
-        ['###', '# #', '###', '# #', '###'], // 8
-        ['###', '# #', '###', '  #', '###'], // 9
+        ['###', '# #', '# #', '# #', '###'],
+        ['  #', '  #', '  #', '  #', '  #'],
+        ['###', '  #', '###', '#  ', '###'],
+        ['###', '  #', '###', '  #', '###'],
+        ['# #', '# #', '###', '  #', '  #'],
+        ['###', '#  ', '###', '  #', '###'],
+        ['###', '#  ', '###', '# #', '###'],
+        ['###', '  #', '  #', '  #', '  #'],
+        ['###', '# #', '###', '# #', '###'],
+        ['###', '# #', '###', '  #', '###'],
     ];
 
     const drawDigit = (digit) => {
@@ -63,7 +63,7 @@ export default function TP12({ navigation }) {
             </View>
             <Text style={{ fontSize: 18, fontFamily: 'Kanit_700Bold', color: '#f0f0f0', textAlign: 'center', marginBottom: 5, marginTop: 5 }}>Resultado:</Text>
             <View style={styles.displayResult}>
-                {displayResult}
+                <Text>{displayResult}</Text>
             </View>
         </View>
     );

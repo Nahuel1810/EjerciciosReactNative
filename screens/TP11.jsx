@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
 
-export default function TP11({ navigation }) {
+export default function TP11() {
     const [inputText, setInputText] = useState('');
     const [islandCount, setIslandCount] = useState(0);
 

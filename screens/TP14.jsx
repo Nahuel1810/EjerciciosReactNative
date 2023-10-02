@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, StyleSheet, Alert } from 'react-native';
 
-export default function TP14({ navigation }) {
+export default function TP14() {
     const [inputText, setInputText] = useState('');
     const [vowelCounts, setVowelCounts] = useState([0, 0, 0, 0, 0]);
 

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "tpsAbdala",
-    "slug": "tpsAbdala",
+    "name": "tp-react-native",
+    "slug": "tp-react-native",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,14 +22,14 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.nahuel1810.tpsAbdala"
+      "package": "com.nahuel1810.tpreactnative"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "28e3d847-8acb-4447-af3b-90736ae78e2d"
+        "projectId": "480c9035-3f9f-4ae2-baf4-d3e57306ac28"
       }
     }
   }

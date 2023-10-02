@@ -6,24 +6,20 @@ import WorkList from '../components/WorksList';
 import fondo from '../assets/fondo.jpg';
 
 export default function HomeScreen({ navigation }) {
-    let [fontsLoaded, fontError] = useFonts({
+    let [fontsLoaded] = useFonts({
         Kanit_700Bold,
         Kanit_300Light_Italic,
     });
-
-    if (!fontsLoaded && !fontError) {
+    if (!fontsLoaded) {
         return null;
     }
-
     return (
         <ImageBackground source={fondo} style={styles.backgroundImage}>
             <View style={styles.container}>
                 <View>
                     <Text style={{ fontSize: 30, fontFamily: 'Kanit_700Bold', color: '#f0f0f0' }}>Trabajos React Native</Text>
                 </View>
-
                 <Card title={'Lista de trabajos'} children={<WorkList navigation={navigation} />} />
-
                 <View style={{ backgroundColor: '#00000030', padding: 10, borderRadius: 10 }}>
                     <Text style={{ fontSize: 18, fontFamily: 'Kanit_300Light_Italic', color: '#f0f0f0' }}>
                         Nahuel Martinez - EEST N°5 - 7° 2°

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
 import Button from '../components/Button';
 
-export default function TP13({ navigation }) {
+export default function TP13() {
     const [inputText, setInputText] = useState('');
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(0);
